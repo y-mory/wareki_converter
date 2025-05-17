@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>和暦⇔西暦変換</title>
+  <style>
+    body { font-family: sans-serif; width: 300px; padding: 10px; margin: 0; box-sizing: border-box; }
+    input, select { width: 100%; margin: 10px 0; padding: 8px; font-size: 16px; box-sizing: border-box; }
+    #result { font-weight: bold; margin-top: 10px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <label for="mode">変換モード:</label>
+  <select id="mode">
+    <option value="toWareki">西暦 → 和暦</option>
+    <option value="toSeireki">和暦 → 西暦</option>
+  </select>
+
+  <div id="input-container"></div>
+  <div id="result"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
